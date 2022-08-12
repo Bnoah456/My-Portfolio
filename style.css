@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+
+
+}
+
+body{
+    background: rgb(2, 62, 82);
+    width: 100%;
+    height: 100vh;
+}
+
+/*------------------HEADER and DASHBOARD---------------------------*/
+
+
+.header{
+    margin-top: 150px;
+    color: rgb(232, 179 , 151);
+    position: absolute;
+    padding-left: 70px;
+}
+.header ul li{
+    font-size: 25px;
+    display: flex;
+    padding: 8px;
+    margin-top: 10px;
+    float: inline-end;
+}
