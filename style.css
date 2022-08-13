@@ -11,7 +11,7 @@ font-family: 'Roboto Mono', monospace;
 
 body{
     background: rgb(2, 62, 82);
-    width: 100%;
+    justify-content: center;
     height: 100vh;
 }
 
@@ -77,10 +77,70 @@ nav ul li a:hover::after{
     /*position: absolute;*/
     text-align: center;
 }
-.marquee-w h1{
+
+.cool-text{
 
     color: rgb(232, 179 , 151);
     margin-top:200px;
     font-size: 50px;
     font-family: HelveticaT,Arial,Verdana,Sans-Serif;
+}
+
+/**/
+
+.main{
+    margin-top: 150px;
+}
+
+/*------------infinite text loop---------------*/
+  .marquee-w {
+    color: rgb(232, 179 , 151);
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 140px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.marquee {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+    height: 100%;
+}
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    font-family: HelveticaT,Arial,Verdana,Sans-Serif;
+    text-align: center;
+    -webkit-text-stroke:  rgb(232, 179 , 151);
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    line-height: 140px;
+    font-size: 85px;
+    animation: marquee 12s linear infinite;
+}
+.marquee2 span {
+    animation-delay: 8s;
+}
+
+.marquee3 span{
+    animation-delay: 4s;
+}
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+    100%{
+        transform: translate(-100%, 0);
+    }
 }
