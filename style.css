@@ -18,16 +18,69 @@ body{
 /*------------------HEADER and DASHBOARD---------------------------*/
 
 
-.header{
+.dashboard{
     margin-top: 150px;
     color: rgb(232, 179 , 151);
-    position: absolute;
     padding-left: 70px;
 }
-.header ul li{
-    font-size: 25px;
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+nav ul{
+    flex: 1;
+    text-align: left;
+    padding-left: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    font-size: 30px;
     display: flex;
     padding: 8px;
     margin-top: 10px;
-    float: inline-end;
+}
+
+nav ul li a{
+    color:rgb(232, 179 , 151);
+    text-decoration: none;
+    position: relative;
+    
+}
+/*---------making that cool underline hover effect--------*/
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 4.5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(232, 179 , 151);
+    transition: width 0.4s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*------------------HEADER and DASHBOARD END---------------------------*/
+
+/*----------------Main page----------------------------*/
+.main{
+    width: 100%;
+    height: 100%;
+    /*position: absolute;*/
+    text-align: center;
+}
+.marquee-w h1{
+
+    color: rgb(232, 179 , 151);
+    margin-top:200px;
+    font-size: 50px;
+    font-family: HelveticaT,Arial,Verdana,Sans-Serif;
 }
