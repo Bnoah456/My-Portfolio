@@ -4,17 +4,236 @@
     box-sizing: border-box;
 }
 
-.section1{
-    background-color: rgb(38, 25, 216);
-    height: 30vh;
+body{
+    margin: 0px;
+    width: 100%;
+    min-height: 100%;
+    background-color: #0a192f;
+    color: #8892b0;
+    
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
 }
 
-.section2{
-    background-color: rgb(25, 156, 216);
-    height: 30vh;
+main{
+    text-align: center;
+    padding: 0px 150px;
 }
+
+
+
+
 
 .section3{
-    background-color: rgba(47, 216, 25, 0.712);
+    background-color: rgba(25, 171, 216, 0.712);
     height: 30vh;
+}
+
+/*------------------Navigation Bar--------------*/
+header{
+    width: 100%;
+}
+nav{
+    display: flex;
+    height: 10vh;
+    background-color: #0a192f;
+    width: 100%;
+}
+
+nav ul{
+    margin: 10px;
+    padding-left: 30px;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    
+    list-style: none;
+}
+li a{
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-top: 10px;
+    padding: 10px;
+}
+ul .buttonnav{
+    margin-top: 10px;
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+nav ul li a {
+    
+    display: flex;
+    color: rgb(232, 240, 233);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 13px;
+    
+}
+
+
+nav ul li a:hover{
+    color: green;
+    transition: all 0.1s ease 0.1s;
+}
+/*------------Navigation Bar end-------------*/
+
+/*----------Section-1-------------------*/
+.section1{
+    background-color: #0a192f;
+    height: 100vh;
+    color: #8892b0;
+}
+
+.hero-1{
+    margin-top: 200px;
+    display: flexbox;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.para-1{
+    padding-left: 200px;
+    padding-top: 50px ;
+    font-size: 20px;
+}
+
+.para-2{
+    padding-left: 200px;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.hero-1 h1{
+    padding-left: 200px;
+    padding-top: 20px;
+    font-size: 60px;
+}
+
+/*----------Section-1-end-------------------*/
+
+/*----------Section-2-------------------*/
+
+.section2{
+    display: flex;
+    height: 50vh;
+    background-color: #0a192f;
+}
+
+.inner-content{
+    background-color: #0a192f;
+    text-align: left;
+    display: inline-block;
+}
+
+.numbered-heading-1{
+    margin-bottom: 30px;
+    display: flex;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.para-3{
+    margin-bottom: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.para-3 a{
+    text-decoration: none;
+    color: #32a895;
+}
+
+.para-4{
+    font-size: 20px
+}
+
+.ul-about{
+    padding: 20px;
+    display: row;
+}
+
+.ul-about li{
+    color: #32a895;
+    list-style:disc;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.aboutimg{
+    position: relative;
+    background-color: #0a192f;
+    border-radius: 50px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------Responsive-----------------*/
+@media screen and (max-width: 480px) {
+
+    body{
+        margin: 0px;
+        width: 100%;
+        min-height: 100%;
+        background-color: #0a192f;
+        color: #8892b0;
+        
+        font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    }
+    main{
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    nav{
+        width: max-content;
+        font-size: 5px;
+    }
+
+    .section1{
+        width: 100%;
+    }
+    
 }
