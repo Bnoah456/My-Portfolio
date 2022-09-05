@@ -19,9 +19,7 @@ main{
     padding: 0px 150px;
 }
 
-
-
-
+/*------------JavaScript---------------*/
 
 
 /*------------------Navigation Bar--------------*/
@@ -63,7 +61,7 @@ nav ul li a {
 
 
 nav ul li a:hover{
-    color: green;
+    color: #64ffda;
     transition: all 0.1s ease 0.1s;
 }
 /*------------Navigation Bar end-------------*/
@@ -124,7 +122,7 @@ nav ul li a:hover{
     display: inline-block;
 }
 
-.numbered-heading-1{
+.numbered-heading-1 {
     margin-bottom: 30px;
     display: flex;
     width: 100%;
@@ -165,57 +163,125 @@ nav ul li a:hover{
 }
 /*----------Section-2-end-------------------*/
 
-/*----------Section-3-------------------*/
+/*----------Section-3 Grid Images-------------------*/
 
 .section3{
-    background-color: rgba(140, 25, 216, 0.712);
-    height: 80vh;
+    color: #64ffda;
+    background-color: #0a192f;
+    height: 130vh;
+}
+.image-grid a{
+    text-decoration: none;
+    padding: 10px;
+}
+.image-grid h1{
+    padding-top: 40px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #64ffda;
+}
+.image-grid {
+    margin-top: 100px;
+    --gap: 30px;
+    --num-cols:2 ;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+.image-grid > a >img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.image-grid-col-2{
+    grid-column: span 2;
+
+}
+.image-grid-row-2{
+    grid-row: span 2;
+    
+}
+
+/*----------Section-3 Grid Images end-------------------*/
+/*----------Section-4--------------------*/
+.section4{
+    height: 60vh;
+}
+.textcontainer{
+    padding-top: 100px;
+}
+.textcontainer h1{
+    color: #64ffda;
+   font-size: 50px;
+}
+.textcontainer p{
+    font-size: 20px;
+   padding: 30px;
+}
+
+.button-container a{
+    text-decoration: none;
+    
+}
+.button-container{
+    
+    display: flex;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.button{
+    
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    padding: 20px 40px;
+    color: #030101;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: 600;
+    margin:0 15px;
+    transition: 0.4s;
+}
+
+.button-1 {
+    color: #64ffda;
+    border: 2px solid #64ffda;
+}
+
+.button-1:hover{
+    color: #030101;
+    background-color: #64ffda;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*----------Section-4-end-------------------*/
 /*-------------------Footer-----------------*/
     footer{
-        height: 5vh;
+        height: 15vh;
     }
+
+    
 /*----------------Footer-end-----------------*/
 
 
 
 /*---------------Responsive-----------------*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
 
     body{
         margin: 0px;
@@ -233,8 +299,73 @@ nav ul li a:hover{
         font-size: 5px;
     }
 
+    main{
+        text-align: center;
+        padding:30px;
+    }
+
     .section1{
         width: 480px;
     }
     
+    .image-grid{
+        --num-cols: 2;
+        --row-height: 200px;
+    }
 }
+/*---------------Responsive end-----------------*/
+/*---------------Contact form-----------------*/
+
+.container{
+    height: 100%;
+    text-align: center;
+}
+.contact-left{
+    text-align: center;
+    flex-basis: 35%;
+}
+
+.contact-right{
+    padding-top: 200px;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-left p i {
+    color:#ff004f;
+    margin-right: 15px;
+    
+}
+form{
+    height: 100%;
+}
+
+.contact-right form{ 
+    padding-left: 30%;
+    width: 70%;
+    text-align: center;
+    justify-content: center;    
+}
+
+form input, form textarea{
+    text-align: center;
+    padding-top: 40px;
+    width: 100%;
+    border: 2px solid #64ffdba8;
+    outline: none;
+    background: #262626; 
+    padding: 60px;
+    margin: 15px 0;
+    color:#ffff;
+    font-size: 20px;
+    border-radius:7px ;
+}
+
+
+/*---------------Contact form-----------------*/
