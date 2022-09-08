@@ -82,18 +82,21 @@ nav ul li a:hover{
 }
 
 .para-1{
+    color:#dfd7d7;
     padding-left: 200px;
     padding-top: 50px ;
     font-size: 20px;
 }
 
 .para-2{
+    color:#dfd7d7;
     padding-left: 200px;
     padding-top: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .hero-1 h1{
+    color:#32a895;
     padding-left: 200px;
     padding-top: 20px;
     font-size: 60px;
